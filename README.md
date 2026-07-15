@@ -75,7 +75,7 @@ ColoTexture-Hybrid/
 ## Download Guide
 ### Dataset
 - **International (SourceForge):** [https://sourceforge.net/projects/colotexture-hybrid/files/](https://sourceforge.net/projects/colotexture-hybrid/files/)
-- **China (Baidu Pan):** [https://pan.baidu.com/s/1S3BKb8geYhzixLbKJyySig?pwd=2026](https://pan.baidu.com/s/1S3BKb8geYhzixLbKJyySig?pwd=2026) (Password: 2026)
+- **China (Baidu Pan):** [https://pan.baidu.com/s/1Y2cSZ_zQJwmmfx_LF-tUzQ?pwd=2026](https://pan.baidu.com/s/1Y2cSZ_zQJwmmfx_LF-tUzQ?pwd=2026) (Password: 2026)
 - Raw source data: Refer to official release of HyperKvasir & LDPolypVideo
 
 ### Pre-trained Weights
