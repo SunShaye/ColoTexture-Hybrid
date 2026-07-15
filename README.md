@@ -129,17 +129,6 @@ python image_manual_selector_linux.py
 ### Ethics Statement
 This study does not collect original patient clinical data. All image materials are derived from two publicly available datasets (LDPolypVideo, HyperKvasir), which have completed independent ethical review by their original releasing institutions. No additional ethical approval is required for this secondary data analysis research.
 
-### Citation
-If you use this dataset or pre-trained weights in your research, please cite our paper:
-```bibtex
-@article{ColoTextureHybrid2026,
-  title={ColoTexture-Hybrid: A Large-Scale Hybrid Dataset for Intestinal Texture Self-Supervised Pre-training},
-  author={XXX, XXX, XXX},
-  journal={XXX},
-  year={2026}
-}
-```
-
 ### License
 This project is open-source under the Apache License 2.0. See the [LICENSE](LICENSE) file for full license text.
 
@@ -270,17 +259,6 @@ python image_manual_selector_linux.py
 
 ### 伦理声明
 本研究未采集原始患者临床数据，所有图像素材来源于两个公开数据集（LDPolypVideo、HyperKvasir），其原始发布机构已完成独立伦理审查。本二次数据分析研究无需额外伦理审批。
-
-### 引用
-如果您在研究中使用了本数据集或预训练权重，请引用我们的论文：
-```bibtex
-@article{ColoTextureHybrid2026,
-  title={ColoTexture-Hybrid: A Large-Scale Hybrid Dataset for Intestinal Texture Self-Supervised Pre-training},
-  author={XXX, XXX, XXX},
-  journal={XXX},
-  year={2026}
-}
-```
 
 ### 许可证
 本项目基于 Apache License 2.0 开源。完整许可证文本请参阅 [LICENSE](LICENSE) 文件。
