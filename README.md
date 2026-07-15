@@ -86,23 +86,23 @@ SimMIM pre-trained EfficientNet-B1 weights are available in the `pretrained_weig
 
 ### 1. Self-supervised Pre-training
 ```bash
-cd simmim_pretraining
+cd train_simmim
 python train.py   # Edit DATA_DIR in train.py to point to your dataset
 ```
 
 ### 2. Load Pre-trained Weights for Downstream Tasks
 ```python
-from simmim_pretraining.load_weights import load_encoder_only
+from train_simmim.load_weights import load_encoder_only
 
 encoder = load_encoder_only('pretrained_weights/effb1_simmim_colo.pth')
 ```
 
-See [simmim_pretraining/load_weights.py](simmim_pretraining/load_weights.py) for more usage examples.
+See [train_simmim/load_weights.py](train_simmim/load_weights.py) for more usage examples.
 
 ### 3. Run Data Cleaning Pipeline
 ```bash
 # Step 1: Extract frames from videos
-cd data_cleaning
+cd data_cleaning_code
 python video_to_frames_nvidia_linux.py
 
 # Step 2: Deduplicate and filter bad frames
