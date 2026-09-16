@@ -89,7 +89,7 @@ ColoTexture-Hybrid/
 ### Download Guide
 #### Dataset
 - **International (SourceForge):** [https://sourceforge.net/projects/colotexture-hybrid/files/](https://sourceforge.net/projects/colotexture-hybrid/files/)
-- **China (Baidu Pan):** [https://pan.baidu.com/s/1S3BKb8geYhzixLbKJyySig?pwd=2026](https://pan.baidu.com/s/1S3BKb8geYhzixLbKJyySig?pwd=2026) (Password: 2026)
+- **China (Baidu Pan):** [https://pan.baidu.com/s/1tuouDhJg9etubpc-561ctg?pwd=2026](https://pan.baidu.com/s/1tuouDhJg9etubpc-561ctg?pwd=2026) (Password: 2026)
 - Raw source data: Refer to official release of HyperKvasir & LDPolypVideo
 
 #### Pre-trained Weights
@@ -222,7 +222,7 @@ ColoTexture-Hybrid/
 ### 下载指南
 #### 数据集
 - **国际（SourceForge）：** [https://sourceforge.net/projects/colotexture-hybrid/files/](https://sourceforge.net/projects/colotexture-hybrid/files/)
-- **国内（百度网盘）：** [https://pan.baidu.com/s/1S3BKb8geYhzixLbKJyySig?pwd=2026](https://pan.baidu.com/s/1S3BKb8geYhzixLbKJyySig?pwd=2026) （密码：2026）
+- **国内（百度网盘）：** [https://pan.baidu.com/s/1tuouDhJg9etubpc-561ctg?pwd=2026](https://pan.baidu.com/s/1tuouDhJg9etubpc-561ctg?pwd=2026) （密码：2026）
 - 原始数据源：请参阅 HyperKvasir 与 LDPolypVideo 的官方发布
 
 #### 预训练权重
