@@ -130,7 +130,9 @@ python image_manual_selector_linux.py
 This study does not collect original patient clinical data. All image materials are derived from two publicly available datasets (LDPolypVideo, HyperKvasir), which have completed independent ethical review by their original releasing institutions. No additional ethical approval is required for this secondary data analysis research.
 
 ### License
-This project is open-source under the Apache License 2.0. See the [LICENSE](LICENSE) file for full license text.
+The source code contained in this GitHub repository is released under the Apache-2.0 License. 
+The dataset available on both platforms is distributed under the CC-BY-4.0 License.
+See the [LICENSE](LICENSE) file for full license text.
 
 ### Contact
 For dataset issues, code bugs or academic cooperation, please open an Issue or contact the corresponding author.
@@ -261,7 +263,9 @@ python image_manual_selector_linux.py
 本研究未采集原始患者临床数据，所有图像素材来源于两个公开数据集（LDPolypVideo、HyperKvasir），其原始发布机构已完成独立伦理审查。本二次数据分析研究无需额外伦理审批。
 
 ### 许可证
-本项目基于 Apache License 2.0 开源。完整许可证文本请参阅 [LICENSE](LICENSE) 文件。
+本 GitHub 仓库中的源代码依据 Apache-2.0 许可证发布。
+两个平台所提供的数据集均按照 CC-BY-4.0 许可证进行分发。
+完整许可证文本请参阅 [LICENSE](LICENSE) 文件。
 
 ### 联系方式
 如有数据集问题、代码缺陷或学术合作，请提交 Issue 或联系通讯作者。
