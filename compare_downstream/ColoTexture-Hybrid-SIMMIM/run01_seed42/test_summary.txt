@@ -1,0 +1,43 @@
+==========================================================================================
+  Single Run Summary  ColoTexture-Hybrid-SIMMIM / seed=42
+==========================================================================================
+Backbone weights : /home/linux/PycharmProjects/EfficientNet-B1/backbones/ladder/ColoTexture-Hybrid-SIMMIM.pth
+Model            : EfficientNetB1UNetStd (vanilla U-Net)
+Data root        : /home/linux/Dataset/MixDB/ProcessedDataset
+Train/Val/Test   : train=1160 val=290 test=797
+Hyperparameters  : epochs=100 patience=20 batch=16 lr=0.001 wd=0.01 warmup=5 seed=42 img=384 threshold=0.5
+
+------------------------------------------------------------------------------------------
+Training Process
+------------------------------------------------------------------------------------------
+Epochs actually trained : 37
+Best epoch              : 17  val_dice=0.9442 val_iou=0.8994
+Last epoch              : loss=0.0729 val_dice=0.9393
+Per-epoch details     : epoch_metrics.csv
+Training curves       : training_curves.png
+
+------------------------------------------------------------------------------------------
+Test Results (per dataset)
+------------------------------------------------------------------------------------------
+Dataset                           dice               iou         precision            recall                f2              hd95
+--------------------------------------------------------------------------------------------------------------------------------
+CVC-300                 0.9237±0.0611    0.8633±0.0906    0.9033±0.0940    0.9519±0.0429    0.9394±0.0446    7.5402±7.8365
+CVC-ClinicDB            0.9336±0.0908    0.8850±0.1161    0.9350±0.0689    0.9419±0.1070    0.9377±0.0998   11.7532±18.5716
+CVC-ColonDB             0.8819±0.1534    0.8118±0.1720    0.8785±0.1691    0.9129±0.1278    0.8937±0.1412   21.7818±42.4750
+ETIS-LaribPolypDB       0.8682±0.2089    0.8057±0.2137    0.8752±0.1378    0.9151±0.2119    0.8937±0.2083   30.2069±78.4574
+Kvasir                  0.9290±0.1084    0.8813±0.1408    0.9513±0.0833    0.9209±0.1297    0.9229±0.1200   25.0645±44.6635
+
+------------------------------------------------------------------------------------------
+Test Results (all 5 datasets pooled)
+------------------------------------------------------------------------------------------
+DICE       mean=        0.8916 std=0.1576 median=0.9379 min=0.0000 max=0.9911 CI95=[0.8806,0.9025]
+IOU        mean=        0.8285 std=0.1741 median=0.8831 min=0.0000 max=0.9823 CI95=[0.8164,0.8406]
+PRECISION  mean=        0.8931 std=0.1445 median=0.9361 min=0.0000 max=1.0000 CI95=[0.8830,0.9031]
+RECALL     mean=        0.9196 std=0.1484 median=0.9646 min=0.0000 max=1.0000 CI95=[0.9092,0.9299]
+F2         mean=        0.9042 std=0.1521 median=0.9505 min=0.0000 max=0.9913 CI95=[0.8936,0.9148]
+HD95       mean=       22.4312 std=51.8386 median=6.3246 min=1.4142 max=384.0000 CI95=[18.8268,26.0356]
+Total images          : 797
+Per-image metrics     : test_per_image.csv
+Per-dataset stats     : test_per_dataset.csv
+Pooled stats          : test_overall.csv
+==========================================================================================

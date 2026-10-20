@@ -1,0 +1,19 @@
+{
+  "backbone_name": "ImageNet",
+  "backbone_path": "/home/linux/PycharmProjects/EfficientNet-B1/efficientnet_b1_imagenet.pth",
+  "model": "EfficientNetB1UNetStd (vanilla U-Net)",
+  "seed": 42,
+  "epochs": 100,
+  "patience": 20,
+  "batch_size": 16,
+  "lr": 0.001,
+  "min_lr": 1e-05,
+  "weight_decay": 0.01,
+  "warmup": 5,
+  "n_train": 1160,
+  "n_val": 290,
+  "n_test": 797,
+  "epochs_done": 87,
+  "best_epoch": 67,
+  "best_val_dice": 0.9252353912284232
+}
