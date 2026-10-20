@@ -1,0 +1,40 @@
+==========================================================================================
+  Single-run summary  ImageNet / train ratio 10% / seed=43
+==========================================================================================
+Backbone weights: /home/linux/PycharmProjects/EfficientNet-B1/efficientnet_b1_imagenet.pth
+Model           : EfficientNetB1UNetStd (vanilla U-Net)
+Data root       : /home/linux/Dataset/MixDB/ProcessedDataset
+Train set       : 116 images (full 1160 images x 10%)
+Eval set        : 290 images (fixed validation set, no test set)
+Hyperparameters : epochs=100 patience=20 batch=16 lr=0.001 wd=0.01 warmup=5 seed=43 img=384 threshold=0.5
+
+------------------------------------------------------------------------------------------
+Training process
+------------------------------------------------------------------------------------------
+Epochs actually trained: 100
+Best epoch        : 92  val_dice=0.8711 val_iou=0.8008
+Last epoch        : loss=0.0790 val_dice=0.8703
+Per-epoch metrics: epoch_metrics.csv
+Training curves  : training_curves.png
+
+------------------------------------------------------------------------------------------
+Evaluation results (fixed validation set, 290 images)
+------------------------------------------------------------------------------------------
+Split                             dice               iou         precision            recall                f2              hd95
+--------------------------------------------------------------------------------------------------------------------------------
+val                     0.8711±0.1676    0.8008±0.2011    0.9061±0.1478    0.8788±0.1880    0.8712±0.1765   41.8346±58.4837
+
+------------------------------------------------------------------------------------------
+Evaluation results (merged)
+------------------------------------------------------------------------------------------
+DICE       mean=        0.8711 std=0.1676 median=0.9402 min=0.0000 max=0.9848 CI95=[0.8517,0.8904]
+IOU        mean=        0.8008 std=0.2011 median=0.8872 min=0.0000 max=0.9700 CI95=[0.7775,0.8240]
+PRECISION  mean=        0.9061 std=0.1478 median=0.9656 min=0.0000 max=1.0000 CI95=[0.8890,0.9232]
+RECALL     mean=        0.8788 std=0.1880 median=0.9571 min=0.0000 max=1.0000 CI95=[0.8570,0.9005]
+F2         mean=        0.8712 std=0.1765 median=0.9443 min=0.0000 max=0.9917 CI95=[0.8508,0.8916]
+HD95       mean=       41.8346 std=58.4837 median=13.8959 min=2.2361 max=384.0000 CI95=[35.0752,48.5939]
+Total images      : 290
+Per-image metrics: val_per_image.csv
+Per-split stats  : val_per_group.csv
+Merged stats     : val_overall.csv
+==========================================================================================
