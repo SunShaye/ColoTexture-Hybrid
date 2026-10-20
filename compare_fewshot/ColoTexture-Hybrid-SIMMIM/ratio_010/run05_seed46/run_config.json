@@ -1,0 +1,20 @@
+{
+  "backbone_name": "ColoTexture-Hybrid-SIMMIM",
+  "backbone_path": "/home/linux/PycharmProjects/EfficientNet-B1/backbones/ladder/ColoTexture-Hybrid-SIMMIM.pth",
+  "model": "EfficientNetB1UNetStd (vanilla U-Net)",
+  "ratio": 0.1,
+  "seed": 46,
+  "epochs": 100,
+  "patience": 20,
+  "batch_size": 16,
+  "lr": 0.001,
+  "min_lr": 1e-05,
+  "weight_decay": 0.01,
+  "warmup": 5,
+  "n_train": 116,
+  "n_train_full": 1160,
+  "n_eval": 290,
+  "epochs_done": 46,
+  "best_epoch": 26,
+  "best_val_dice": 0.933264999554075
+}
