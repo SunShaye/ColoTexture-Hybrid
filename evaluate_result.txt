@@ -1,0 +1,48 @@
+====================================================================================================
+  EfficientNet-B1 Backbone Comparison - Test Metrics Summary
+====================================================================================================
+Device              : cuda
+Dataset (images)    : /home/linux/Dataset/MixDB/TrainDataset/image
+Dataset (masks)     : /home/linux/Dataset/MixDB/TrainDataset/mask
+Number of samples   : 1000
+
+Backbone A          : ImageNet
+                      efficientnet_b1_imagenet.pth
+Backbone B          : ColoTexture-Hybrid-SIMMIM
+                      backbones/ladder/ColoTexture-Hybrid-SIMMIM.pth
+                      Weights pretrained on the ColoTexture-Hybrid dataset with SIMMIM
+Input normalization : ColoTexture-Hybrid-SIMMIM uses raw input in 0,1; ImageNet uses ImageNet normalization
+
+----------------------------------------------------------------------------------------------------
+Background
+----------------------------------------------------------------------------------------------------
+The dataset has no class labels, so KMeans(K=2) generates pseudo-labels in each feature space,
+the metrics below measure the separability and clustering quality of the features extracted by the two backbones.
+Feature shape       : ColoTexture-Hybrid-SIMMIM (1000, 1280); ImageNet (1000, 1280)
+Cluster distribution (ColoTexture-Hybrid-SIMMIM)
+                      0: 307 (30.7%), 1: 693 (69.3%)
+Cluster distribution (ImageNet)
+                      0: 597 (59.7%), 1: 403 (40.3%)
+Feature statistics (ColoTexture-Hybrid-SIMMIM) : mean 0.0046  std 0.2784
+Feature statistics (ImageNet) : mean 0.1728  std 0.4313
+
+----------------------------------------------------------------------------------------------------
+1. Test Metrics Summary
+----------------------------------------------------------------------------------------------------
+Metric                                    ImageNet     ColoTexture-Hybrid-SIMMIM     Delta (B-A)
+----------------------------------------------------------------------------------------
+Linear Probe Accuracy                   1.0000                        0.9900     -0.0100   higher is better
+k-NN Accuracy (k=5)                     1.0000                        0.9800     -0.0200   higher is better
+Fisher Discriminant Ratio               0.1728                        0.7609     +0.5881   higher is better
+Silhouette Score                        0.1305                        0.4559     +0.3254   higher is better [-1,1]
+Davies-Bouldin Index                    2.3911                        1.0298     -1.3613   lower is better
+Calinski-Harabasz Index               160.2700                      746.7587   +586.4887   higher is better
+CKA Similarity (A vs B)                                               0.1913               similarity [0,1]
+
+----------------------------------------------------------------------------------------------------
+2. Direction Consistency
+----------------------------------------------------------------------------------------------------
+ColoTexture-Hybrid-SIMMIM outperforms ImageNet on 4/6 metrics with a defined direction.
+(Davies-Bouldin is lower-is-better, the rest are higher-is-better; CKA measures feature similarity and has no better/worse direction)
+
+====================================================================================================
