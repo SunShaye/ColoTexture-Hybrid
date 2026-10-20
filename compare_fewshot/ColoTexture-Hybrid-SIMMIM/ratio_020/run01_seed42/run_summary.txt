@@ -1,0 +1,40 @@
+==========================================================================================
+  Single-run summary  ColoTexture-Hybrid-SIMMIM / train ratio 20% / seed=42
+==========================================================================================
+Backbone weights: /home/linux/PycharmProjects/EfficientNet-B1/backbones/ladder/ColoTexture-Hybrid-SIMMIM.pth
+Model           : EfficientNetB1UNetStd (vanilla U-Net)
+Data root       : /home/linux/Dataset/MixDB/ProcessedDataset
+Train set       : 232 images (full 1160 images x 20%)
+Eval set        : 290 images (fixed validation set, no test set)
+Hyperparameters : epochs=100 patience=20 batch=16 lr=0.001 wd=0.01 warmup=5 seed=42 img=384 threshold=0.5
+
+------------------------------------------------------------------------------------------
+Training process
+------------------------------------------------------------------------------------------
+Epochs actually trained: 79
+Best epoch        : 59  val_dice=0.9371 val_iou=0.8878
+Last epoch        : loss=0.0598 val_dice=0.9347
+Per-epoch metrics: epoch_metrics.csv
+Training curves  : training_curves.png
+
+------------------------------------------------------------------------------------------
+Evaluation results (fixed validation set, 290 images)
+------------------------------------------------------------------------------------------
+Split                             dice               iou         precision            recall                f2              hd95
+--------------------------------------------------------------------------------------------------------------------------------
+val                     0.9371±0.0665    0.8878±0.0993    0.9522±0.0658    0.9308±0.0907    0.9324±0.0795   18.7830±28.2122
+
+------------------------------------------------------------------------------------------
+Evaluation results (merged)
+------------------------------------------------------------------------------------------
+DICE       mean=        0.9371 std=0.0665 median=0.9581 min=0.4623 max=0.9910 CI95=[0.9294,0.9448]
+IOU        mean=        0.8878 std=0.0993 median=0.9196 min=0.3007 max=0.9822 CI95=[0.8764,0.8993]
+PRECISION  mean=        0.9522 std=0.0658 median=0.9738 min=0.4345 max=0.9996 CI95=[0.9446,0.9598]
+RECALL     mean=        0.9308 std=0.0907 median=0.9589 min=0.3044 max=0.9995 CI95=[0.9203,0.9413]
+F2         mean=        0.9324 std=0.0795 median=0.9581 min=0.3526 max=0.9920 CI95=[0.9233,0.9416]
+HD95       mean=       18.7830 std=28.2122 median=7.6158 min=1.4142 max=175.1755 CI95=[15.5223,22.0437]
+Total images      : 290
+Per-image metrics: val_per_image.csv
+Per-split stats  : val_per_group.csv
+Merged stats     : val_overall.csv
+==========================================================================================
